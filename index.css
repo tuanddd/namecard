@@ -1,0 +1,86 @@
+:root {
+  /* css variable */
+  --blue-background: #dbeafe;
+  --avatar-background: #9ca3af;
+  --avatar-border: 0 0 0 4px white;
+  --text-gray-1: #1f2937;
+  --text-gray-2: #6b7280;
+  --text-blue-1: #3b82f6;
+  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+body {
+  height: 100vh;
+  background-color: var(--blue-background);
+  /* css flexbox */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wave {
+  /* css positioning */
+  position: fixed;
+  bottom: 0;
+}
+
+/* 1rem = 16px */
+article {
+  max-width: 42rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  /* css box model */
+  padding: 1.25rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.background-cover {
+  height: 8rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.avatar {
+  width: 7rem;
+  height: 7rem;
+  background-color: var(--avatar-background);
+  border-radius: 100%;
+  /* css box model */
+  margin-top: -4.5rem;
+  margin-left: 1.5rem;
+  box-shadow: var(--avatar-border);
+}
+
+.info {
+  display: flex;
+  padding: 1rem;
+}
+
+.profile {
+  margin-right: 1rem;
+}
+
+.profile h1 {
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--text-gray-1);
+}
+
+.nickname,
+.role,
+.introduction {
+  color: var(--text-gray-2);
+}
+
+.role {
+  margin-top: 1rem;
+}
+
+.profile a {
+  color: var(--text-blue-1);
+}
