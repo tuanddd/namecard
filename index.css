@@ -37,6 +37,7 @@ article {
 .header {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .background-cover {
@@ -52,17 +53,17 @@ article {
   border-radius: 100%;
   /* css box model */
   margin-top: -4.5rem;
-  margin-left: 1.5rem;
   box-shadow: var(--avatar-border);
 }
 
 .info {
   display: flex;
+  flex-direction: column;
   padding: 1rem;
 }
 
 .profile {
-  margin-right: 1rem;
+  text-align: center;
 }
 
 .profile h1 {
@@ -81,6 +82,33 @@ article {
   margin-top: 1rem;
 }
 
+.introduction {
+  margin-top: 2rem;
+}
+
 .profile a {
   color: var(--text-blue-1);
+}
+
+@media (min-width: 768px) {
+  .info {
+    flex-direction: row;
+  }
+
+  .header {
+    align-items: flex-start;
+  }
+
+  .avatar {
+    margin-left: 1.5rem;
+  }
+
+  .profile {
+    text-align: left;
+    margin-right: 2rem;
+  }
+
+  .introduction {
+    margin-top: 0;
+  }
 }
